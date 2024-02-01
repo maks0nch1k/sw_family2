@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" />
+    <link rel="stylesheet" href="/static/css/index.css"/>
+</head>
+<body>
+<div class="main-container">
+    <div class="img">
+        <div class="box">
+            <div class="img-2"></div>
+            <span class="text">Политика конфиденциальности</span
+            ><span class="text-2">Контакты</span
+        ><span class="text-3">Договор публичной оферты</span
+        ><span class="text-4">Гарантийные обязательства</span>
+        </div>
+        <span class="text-5">© Школа Робототехники СПб</span>
+    </div>
+    <div class="group">
+        <div class="box-2">
+            <div class="section">
+                <div class="wrapper">
+                    <div class="group-2"><div class="img-3"></div></div>
+                </div>
+            </div>
+        </div>
+
+        {% block content %}{% endblock %}
+
+    </div>
+    <div class="img-8">
+        <span class="text-12">Программное обеспечение</span
+        ><span class="text-13">Контроллеры</span
+    ><span class="text-14">Комплектации</span
+    ><span class="text-15">Исполнители</span
+    ><span class="text-16">Датчики</span>
+    </div>
+</div>
+</body>
+</html>
