@@ -1,9 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, make_response, jsonify
+from data import db_session
+from data.controllers import Controller
+
 
 app = Flask(__name__)
 
 
 def main():
+    db_session.global_init("db/products.db")
     app.run(port='5000', host="127.0.0.1")
 
 
@@ -35,6 +39,16 @@ def software():
 @app.route("/sets")
 def sets():
     return render_template("base.html", title="Комплектации")
+
+
+@app.errorhandler(404)
+def not_found(error):
+    return make_response(jsonify({'error': 'Not found'}), 404)
+
+
+@app.errorhandler(400)
+def bad_request(_):
+    return make_response(jsonify({'error': 'Bad Request'}), 400)
 
 
 if __name__ == "__main__":
