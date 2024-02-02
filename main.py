@@ -14,7 +14,7 @@ def main_page():
 
 @app.route("/controllers")
 def controllers():
-    return render_template("base.html", title="Контроллеры конструкторов R:ED")
+    return render_template("controllers.html", title="Контроллеры конструкторов R:ED")
 
 
 @app.route("/performers")

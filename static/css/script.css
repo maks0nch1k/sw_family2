@@ -1,0 +1,9 @@
+.tab-btn-active {
+    pointer-events: none;
+    color: red;
+    margin-top: 120px;
+}
+
+.tab-pane:not(.tab-pane-show) {
+    display: none;
+}
