@@ -4,7 +4,7 @@ from sqlalchemy_serializer import SerializerMixin
 
 
 class Controller(SqlAlchemyBase, SerializerMixin):
-    __tablename__ = 'controller'
+    __tablename__ = 'controllers'
 
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
     description = sqlalchemy.Column(sqlalchemy.String, nullable=False)
