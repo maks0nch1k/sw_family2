@@ -1,17 +1,4 @@
-.main-container100 {
-  overflow: hidden;
-}
 
-.main-container100,
-.main-container100 * {
-  box-sizing: border-box;
-}
-.main-container100 {
-  position: relative;
-  width: 1330.378px;
-  height: 1491px;
-  margin: 0 auto;
-}
 .pic100 {
   position: absolute;
   width: 1209px;
